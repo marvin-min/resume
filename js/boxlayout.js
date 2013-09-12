@@ -55,7 +55,7 @@ var Boxlayout = (function() {
                     $section.data('open', true).addClass('bl-expand bl-expand-top');
                     $el.addClass('bl-expand-item');
                 }
-		if($(this).find(".icon-envelop")){
+            	if($(this).find(".icon-envelop")){
 			var $map = $('#map'),
 			$tabContactClass = ('tab-contact'),
 			$address = '江苏省苏州市沧浪区干将东路333号, China';
@@ -66,9 +66,7 @@ var Boxlayout = (function() {
 					{ 'address' : $address }
 				]
 			});
-	
 		}
-            
             }).find('span.icon-cancel-circle').on('click', function() {
 
                 // close the expanded section and scale up the others

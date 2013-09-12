@@ -80,36 +80,3 @@ function change1() {
 			}
 
 window.onload = change1;
-		$(document).ready(
-				function() {
-					$('body').css('overflow-x', 'hidden');
-					var con = $('.timeline-container');
-					var position = con.position();
-					$('#timeline-outputtext').css('top', (position.top + 130));
-
-					$('.time-line-href').on('click', function(e) {
-						e.preventDefault();
-						$('.circleLine').css('opacity', '0')
-						$(this).find('div').css('opacity', '1')
-						$('#timeline-outputtext').animate({
-							'left' : -275
-						});
-					});
-					$('.timeline-circles').on(
-							'click',
-							function() {
-								var outputR = $('#timeline-outputtext').css(
-										'<?php echo direction;?>');
-								if (outputR == '-275px') {
-									$('#timeline-outputtext').animate({
-										'left' : '0'
-									});
-								} else {
-									$('#timeline-outputtext').animate({
-										'left' : '-275px'
-									}).animate({
-										'left' : '0'
-									});
-								}
-							});
-				});
